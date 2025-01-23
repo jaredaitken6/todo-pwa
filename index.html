@@ -18,8 +18,8 @@
     <script src="app.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js', {
-                scope: '/'
+            navigator.serviceWorker.register('/todo-pwa/service-worker.js', {
+                scope: '/todo-pwa/'
             })
                 .then(reg => console.log('Service Worker Registered'))
                 .catch(err => console.error('Service Worker Error:', err));
